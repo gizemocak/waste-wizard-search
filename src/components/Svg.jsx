@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 
 const Svg = ({
-  fill = "#2E8B57",
+  fill = "#A7A7A7",
   className = "star",
   viewBox = "0 0 5500 5500",
   isFavorite = false

@@ -103,7 +103,9 @@ class Home extends Component {
         </form>
         {this.state.list.length > 0 && this.state.inputValue.length > 0 && (
           <List
-            list={this.state.list}
+            list={this.state.list.sort((a, b) => {
+              return this.state.favourites.includes(a.title) ? -1 : 1;
+            })}
             addToFavourites={this.addToFavourites}
             favourites={this.state.favourites}
           />
