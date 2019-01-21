@@ -23,7 +23,7 @@ class Home extends Component {
   getInputValue = e => {
     this.setState({ inputValue: e.target.value });
     if (e.target.value.length === 0) {
-      this.setState({ list: [] });
+      this.setState({ list: [], favourites: [] });
     }
   };
 
