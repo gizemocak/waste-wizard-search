@@ -2,31 +2,124 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.header {
+  background: linear-gradient(to right, #1f5895, #27935c);
+  color: #fff;
+  text-align: center;
+  padding: 25px 0px 25px 0px;
+  margin-top: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-box {
+  width: 100%;
+  margin-left: 10px;
+  font-size: 20px;
+  height: 35px;
+  padding-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-search {
+  position: relative;
+  bottom: 4px;
+  background: transparent;
+  color: #fff;
+  font-size: 33px;
+  font-weight: bold;
+  transform: rotate(45deg);
+  border: none;
+  padding: 0px;
+}
+.container-search {
+  position: relative;
+  background: #2e925c;
+  border-radius: 2px;
+  width: 42px;
+  height: 40px;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.list-inner-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.star-container {
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.item-list,
+.item-list ul {
+  list-style: none;
+}
+
+.item-list ul li::before {
+  content: "\2022";
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  width: 18px;
+  margin-left: -18px;
+}
+
+.title {
+  width: 300px;
+  min-width: 300px;
+  margin-left: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.trapezium {
+  height: 0;
+  width: 65px;
+  border-bottom: 20px solid #f9f4ed;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  margin: 0px 0px 0px 5px;
+  background: #000;
+}
+
+.trapezium-container {
+  background: #000;
+  padding-top: 5px;
+}
+
+.space {
+  height: 9px;
+  background: #f9f4ed;
+}
+
+svg {
+  width: 17px;
+  height: 17px;
+}
+
+.favourites-header {
+  color: #23995c;
+  margin-left: 18px;
+  font-weight: bolder;
+}
+
+.small-circle {
+  border-radius: 50%;
+  background: #fff;
+  height: 9px;
+  width: 9px;
+  position: absolute;
+  left: 67px;
+  top: 10px;
 }
