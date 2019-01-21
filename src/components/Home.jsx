@@ -110,16 +110,20 @@ class Home extends Component {
             favourites={this.state.favourites}
           />
         )}
-        {this.state.favourites.length > 0 && this.state.inputValue.length > 0 && (
-          <div>
-            <h2 className="favourites-header">Favourites</h2>
-            <List
-              list={this.getFavoritesList()}
-              addToFavourites={this.addToFavourites}
-              favourites={this.state.favourites}
-            />
-          </div>
-        )}
+        {this.state.favourites.length > 0 &&
+          this.state.inputValue.length > 0 &&
+          this.state.list.find(item =>
+            this.state.favourites.includes(item.title)
+          ) && (
+            <div>
+              <h2 className="favourites-header">Favourites</h2>
+              <List
+                list={this.getFavoritesList()}
+                addToFavourites={this.addToFavourites}
+                favourites={this.state.favourites}
+              />
+            </div>
+          )}
       </Fragment>
     );
   }
